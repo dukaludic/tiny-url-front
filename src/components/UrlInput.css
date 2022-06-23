@@ -1,3 +1,15 @@
+.container {
+  background-color: #fff;
+  padding: 10px;
+  width: 670px;
+  border-radius: 5px;
+  padding: 10px;
+  /* width: 100%; */
+  box-shadow: 0 3px 6px rgba(32, 33, 36, 0.28);
+  min-height: 500px;
+  margin: 0 auto;
+}
+
 .url-input-container {
   /* position: absolute;
   top: 50px;
@@ -6,8 +18,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px 100px;
-  width: 800px;
+  /* padding: 30px 100px; */
+  width: 650px;
 }
 
 .input-container {
@@ -64,7 +76,7 @@
   background-color: white;
   border-radius: 10px;
   border: none;
-  box-shadow: 0 3px 6px rgba(32, 33, 36, 0.28);
+  /* box-shadow: 0 3px 6px rgba(32, 33, 36, 0.28); */
   padding: 20px;
 }
 
@@ -90,4 +102,17 @@
 
 .short-url-link {
   cursor: "pointer";
+}
+
+.error {
+  color: rgb(177, 49, 49);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  height: 20px;
+}
+
+.spinner {
+  margin-left: 40px;
 }

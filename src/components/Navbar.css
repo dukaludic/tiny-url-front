@@ -1,5 +1,66 @@
 .navbar {
-  height: 100px;
-  width: 600px;
-  background-color: #aaa;
+  /* height: 50px; */
+  width: 100%;
+  /* background-color: #aaa; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  background-color: rgb(138, 181, 216);
+  box-shadow: 0 3px 6px rgba(32, 33, 36, 0.28);
+  /* justify-content: space-between; */
+}
+
+.navbar-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.navbar-left-btns-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: rgb(78, 141, 192);
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  margin: 20px 0;
+  /* box-shadow: 0 3px 6px rgba(32, 33, 36, 0.28); */
+}
+
+.navbar-btn:hover {
+  background-color: rgb(51, 108, 155);
+}
+
+.navbar-btn:first-of-type {
+  margin-right: 20px;
+}
+
+.btn-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #ddd;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: rgb(131, 122, 122);
+  margin: 20px 20px 20px 0;
+  cursor: default;
+}
+
+.btn-active {
+  background-color: red;
 }
