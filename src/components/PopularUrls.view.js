@@ -49,12 +49,6 @@ function PopularUrls() {
                 <div>
                   <p>{url.count}</p>
                 </div>
-                <AiFillCopy
-                  // onClick={() => onClickShortUrl(index)}
-                  color={"#aaa"}
-                  size={20}
-                  className="short-url-copy"
-                />
               </div>
             </div>
           );
