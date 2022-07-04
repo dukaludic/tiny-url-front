@@ -23,6 +23,7 @@ function UrlInput() {
   };
 
   const isShortened = (input) => {
+    console.log(shortenedUrls, input, "input", "shortenedUrls");
     const url = shortenedUrls.some((url) => url.long_url === input);
     console.log("isShortened", url, shortenedUrls);
 
@@ -49,10 +50,11 @@ function UrlInput() {
       return;
     }
 
-    const isAlreadyShortened = isShortened();
+    const isAlreadyShortened = isShortened(input);
 
     if (isAlreadyShortened) {
       console.log("Shortened");
+      setIsLoading(false);
       return;
     }
     try {
